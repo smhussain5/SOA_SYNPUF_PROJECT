@@ -1,0 +1,35 @@
+/*
+
+GOAL: CREATE INPATIENT VIEW FOR FUTURE USE
+
+SELECT MEMBER ID, CLAIM START YEARS, NUMBER OF ADMISSIONS, AND TOTAL INPATIENT CLAIM PAYMENTS FROM THE INPATIENT TABLE 
+AND THEN GROUP DATA BY MEMBER ID AND CLAIM START YEAR
+
+*/
+
+CREATE VIEW ip_view AS
+SELECT
+		i.DESYNPUF_ID AS member_id,
+		CAST(CLM_FROM_DT / 10000 AS INTEGER) AS year,
+		COUNT(DISTINCT i.CLM_ID) AS admissions,
+		SUM(i.CLM_PMT_AMT) AS inpatient_payment
+FROM
+		inpatient i
+GROUP BY
+		i.DESYNPUF_ID,
+		CAST(i.CLM_FROM_DT / 10000 AS INTEGER)
+		
+/*
+  
+RESULTS:
+46,478 TOTAL ROWS
+ 
+member_id       |year|admissions|inpatient_payment|
+----------------+----+----------+-----------------+
+0000838E2BBC2ADA|2008|2         |21000.0          |
+0001B0072BCFE957|2008|3         |13000.0          |
+0001B0072BCFE957|2009|2         |10000.0          |
+0001B0072BCFE957|2010|1         |4000.0           |
+000270BDE7154CB6|2009|2         |17000.0          |
+
+*/
