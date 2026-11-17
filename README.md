@@ -105,7 +105,7 @@ Source: CMS DE-SynPUF https://www.cms.gov/Research-Statistics-Data-and-Systems/D
 
 ## LIMITATIONS
 
-## Skills Utilized
+## SKILLS UTILIZED
  
 - **SQL:** data-quality checks, filtering, `UNION ALL`, `CREATE TABLE AS`, aggregation, `LEFT JOIN` to a summarized subquery, reconciliation between sources
 - **Excel:** trend analysis, decomposition formulas, credibility-weighted trend selection, sensitivity tables, charts
