@@ -18,15 +18,17 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 
 ## DEFINITIONS
 
-Member Month
-Per Member Per Month (PMPM)
-Utilization
-Admissions per 1,000
-Unit Cost
-Trend
-Fee-For-Service (FFS)
-HMO/Medicare Advantage
-Credibility
+| Term | Definition |
+| --- | --- |
+| **Member Month** | One covered individual enrolled in an insurance plan for one month |
+| **Per Member Per Month (PMPM)** | Average cost per member for each month of coverage. Used to compare groups of differing sizes/coverage periods |
+| **Utilization** | How much care members use |
+| **Admissions per 1,000** | Hospital admissions per 1,000 members |
+| **Unit Cost** | Price per unit of care |
+| **Trend** | Percentage change from one year to the next year |
+| **Fee-For-Service (FFS)** | Medical care structure in which healthcare providers are paid for each medical service they provide | 
+| **HMO/Medicare Advantage** | Medical care structure in which patients subscribe to a network healthcare professionals that coordinate the services that the patient receives |
+| **Credibility** | How much weight is given to the subject data compared to outside data |
 
 ## DATA
 
@@ -46,11 +48,10 @@ Source: CMS DE-SynPUF https://www.cms.gov/Research-Statistics-Data-and-Systems/D
 | `BENE_HI_CVRAGE_TOT_MONS` | Months of Part A (hospital) coverage |
 | `BENE_SMI_CVRAGE_TOT_MONS` | Months of Part B (medical) coverage |
 | `BENE_HMO_CVRAGE_TOT_MONS` | Months in an HMO (Medicare Advantage) |
-| `MEDREIMB_IP`, `MEDREIMB_OP`, `MEDREIMB_CAR` | Annual Medicare FFS payments: inpatient, outpatient, and carrier (physician and supplier) |
+| `MEDREIMB_IP`, `MEDREIMB_OP`, `MEDREIMB_CAR` | Annual Medicare FFS payments: inpatient, outpatient, and carrier |
 | `CLM_ID` | Claim identifier |
 | `CLM_FROM_DT` | First day of service, stored as a number like 20080315 |
 | `CLM_PMT_AMT` | Amount Medicare paid on the claim |
-
 
 ## METHODOLOGY
 
