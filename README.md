@@ -1,5 +1,7 @@
 # Medicare PMPM and Trend Analysis
 
+<img src="https://www.cms.gov/themes/custom/cms_evo/logo.svg" width="50%" alt="Description">
+
 ## Introduction
 
 How much did medical costs grow from 2008 to 2009 for a group of Medicare beneficiaries. Was that growth driven by increased frequency of care or increased cost of receiving care?
