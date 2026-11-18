@@ -123,6 +123,15 @@ Input SQL results into Microsoft Excel for trend analysis. Information included.
 
 ### (6) Projection
 
+```
+Projected 2011 PMPM = 2009 PMPM × (1 + selected trend) ^ 2
+Selected trend = Z × observed trend + (1 − Z) × benchmark trend
+```
+ 
+- **Two years of trend:** the experience period (calendar 2009) is centered on July 1, 2009, and the projection period (calendar 2011) on July 1, 2011.
+- **Benchmark:** Medicare's per-enrollee spending growth for 2009 from CMS's National Health Expenditure tables (Table 21). It's per enrollee because PMPM is already per member; total-spending growth would also include enrollment growth.
+- **Sensitivity table:** projected PMPM at annual trends from 2% to 10%, showing how much the answer depends on the trend selected.
+
 ## Results
 
 ### Study population
@@ -164,6 +173,8 @@ Input SQL results into Microsoft Excel for trend analysis. Information included.
 | **Projected 2011 PMPM** | **$417.06** |
 
 ## Reasoning
+
+TBD
 
 ## Limitations
 - This CMS dataset is synthetic, meaning it does not represent actual patients and claims. Any calculations cannot be applied to a real-world Medicare pricing
