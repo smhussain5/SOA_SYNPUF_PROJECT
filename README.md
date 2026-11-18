@@ -56,6 +56,9 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 ## Methodology
 
 ### (1) Check Data and Define Study Population
+
+
+
 ### (2) Calculate Member Months
 ### (3) Calculate PMPM By Service Category
 ### (4) Calculate Inpatient Admissions and Cost per Admission
@@ -101,12 +104,13 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 | Credibility weight Z | 0.25 |
 | Selected trend | 4.30% |
 | **Projected 2011 PMPM** | **$417.06** |
- 
-**Why Z is low:** the observed trend is one year of change from one synthetic sample. Single-year trends are volatile even in real data, and synthetic data doesn't reflect real cost behavior, so most of the weight goes to the national benchmark.
 
 ## Reasoning
 
 ## Limitations
+- This CMS dataset is synthetic, meaning it does not represent actual patients and claims. Any calculations cannot be applied to a real-world Medicare pricing
+- Calculations are based on one-year of trend from one CMS sample
+- There is no IBNR adjustment, meaning calculations do not allow for any claims that have been incurred but not reported
 
 ## Skills Utilized
  
