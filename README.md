@@ -1,6 +1,6 @@
-# MEDICARE PMPM AND TREND ANALYSIS
+# Medicare PMPM and Trend Analysis
 
-## INTRODUCTION
+## Introduction
 
 How much did medical costs grow from 2008 to 2009 for a group of Medicare beneficiaries. Was that growth driven by increased frequency of care or increased cost of receiving care?
 
@@ -8,7 +8,7 @@ This project answers these 2 questions using Structured Query Language (SQL), Mi
 
 NOTE: CMS DE-SynPUF data is synthetic. It is designed to look similar to real Medicare claims data without describing real patients, which could affect patient-physician confidentiality. This project is designed purely to demonstrate data analytic methodologies. These results are findings about real Medicare costs.
 
-## MOTIVATION
+## Motivation
 
 Health insurance premiums are determined months before the year they cover. Analysts may only have claims data from previous years at their disposal to accurately calculate premiums; therefore, they must project claims forward using trend (i.e., expected yearly change in cost per member).
 
@@ -16,7 +16,7 @@ Furthermore, it is also important to know why costs changed. For example, if mem
 
 This project measures the change in fee-for-service (FFS) Medicare from 2008 to 2009, splits the change in costs for inpatient services into utilization and unit costs, and project the PMPM for 2011.
 
-## DEFINITIONS
+## Definitions
 
 | Term | Definition |
 | --- | --- |
@@ -30,7 +30,7 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 | **HMO/Medicare Advantage** | Medical care structure in which patients subscribe to a network healthcare professionals that coordinate the services that the patient receives |
 | **Credibility** | How much weight is given to the subject data compared to outside data |
 
-## DATA
+## Data
 
 **Source:** [CMS DE-SynPUF](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF), Sample 5 (one of 20 independent samples).
 
@@ -53,16 +53,16 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 | `CLM_FROM_DT` | First day of service (Date format YYYYMMDD) |
 | `CLM_PMT_AMT` | Amount Medicare paid on the claim |
 
-## METHODOLOGY
+## Methodology
 
-1. Check Data and Define Study Population
-2. Calculate Member Months
-3. Calculate PMPM By Service Category
-4. Calculate Inpatient Admissions and Cost per Admission
-5. Trend Split
-6. Projection
+### (1) Check Data and Define Study Population
+### (2) Calculate Member Months
+### (3) Calculate PMPM By Service Category
+### (4) Calculate Inpatient Admissions and Cost per Admission
+### (5) Trend Split
+### (6) Projection
 
-## RESULTS
+## Results
 
 ### Study population
  
@@ -104,11 +104,11 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
  
 **Why Z is low:** the observed trend is one year of change from one synthetic sample. Single-year trends are volatile even in real data, and synthetic data doesn't reflect real cost behavior, so most of the weight goes to the national benchmark.
 
-## REASONING
+## Reasoning
 
-## LIMITATIONS
+## Limitations
 
-## SKILLS UTILIZED
+## Skills Utilized
  
 - **SQL:** data-quality checks, filtering, `UNION ALL`, `CREATE TABLE AS`, aggregation, `LEFT JOIN` to a summarized subquery, reconciliation between sources
 - **Excel:** trend analysis, decomposition formulas, credibility-weighted trend selection, sensitivity tables, charts
