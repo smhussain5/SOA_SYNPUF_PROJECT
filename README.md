@@ -68,18 +68,18 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
  
 | | 2008 | 2009 |
 | --- | --- | --- |
-| Members kept | [ ] | [ ] |
-| Member months | [ ] | [ ] |
-| Average months per member | [ ] | [ ] |
+| Members kept | 78,002 | 72,629 |
+| Member months | 910,678 | 870,883 |
+| Average months per member | 11.68 | 11.99 |
  
 ### PMPM by service category
  
 | Category | 2008 PMPM | 2009 PMPM | Trend | Share of total change |
 | --- | --- | --- | --- | --- |
-| Inpatient | [ ] | [ ] | [ ] | [ ] |
-| Outpatient | [ ] | [ ] | [ ] | [ ] |
-| Carrier | [ ] | [ ] | [ ] | [ ] |
-| **Total** | [ ] | [ ] | [ ] | 100% |
+| Inpatient | $209.78 |	$192.81 |	-8.09%	|	-445.41% |
+| Outpatient | $58.16 |	$68.26 |	17.37% |	265.09% |
+| Carrier | $111.62 |	$122.30 |	9.57%	| 280.31% |
+| **Total** | $379.56 |	$383.37 |	1.00% | 100% |
 
 ![Alt text description](04_FINAL_DATA/inpatient_services_contributed_most_to_pmpm_change.png)
  
@@ -87,20 +87,20 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
  
 | Measure | 2008 | 2009 | Trend |
 | --- | --- | --- | --- |
-| Admissions per 1,000 (annual) | [ ] | [ ] | [ ] |
-| Cost per admission | [ ] | [ ] | [ ] |
-| Inpatient PMPM | [ ] | [ ] | [ ] | 
+| Admissions per 1,000 (annual) | 265.1475055 |	234.7548408 |	-11.46% |
+| Cost per admission | $9,470.55 |	$9,661.32 |	2.01%
+| Inpatient PMPM | $209.26 |	$189.00 |	-9.68%
 
 ### Projection
  
 | Input | Value |
 | --- | --- |
-| 2009 total PMPM | [ ] |
-| Observed trend (2008→2009) | [ ] |
-| Benchmark trend (Medicare per enrollee, 2009) | [ ] |
-| Credibility weight Z | [ ] |
-| Selected trend | [ ] |
-| **Projected 2011 PMPM** | **[ ]** |
+| 2009 total PMPM | $383.37  |
+| Observed trend (2008→2009) | 1.00% |
+| Benchmark trend (Medicare per enrollee, 2009) | 5.40% |
+| Credibility weight Z | 0.25 |
+| Selected trend | 4.30% |
+| **Projected 2011 PMPM** | **$417.06** |
  
 **Why Z is low:** the observed trend is one year of change from one synthetic sample. Single-year trends are volatile even in real data, and synthetic data doesn't reflect real cost behavior, so most of the weight goes to the national benchmark.
 
