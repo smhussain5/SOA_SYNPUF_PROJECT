@@ -32,7 +32,7 @@ This project measures the change in fee-for-service (FFS) Medicare from 2008 to 
 
 ## DATA
 
-Source: CMS DE-SynPUF https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF
+**Source:** [CMS DE-SynPUF](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF), Sample 5 (one of 20 independent samples).
 
 | File | Loaded as table | What it holds |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ Source: CMS DE-SynPUF https://www.cms.gov/Research-Statistics-Data-and-Systems/D
 | `BENE_HMO_CVRAGE_TOT_MONS` | Months in an HMO (Medicare Advantage) |
 | `MEDREIMB_IP`, `MEDREIMB_OP`, `MEDREIMB_CAR` | Annual Medicare FFS payments: inpatient, outpatient, and carrier |
 | `CLM_ID` | Claim identifier |
-| `CLM_FROM_DT` | First day of service, stored as a number like 20080315 |
+| `CLM_FROM_DT` | First day of service (Date format YYYYMMDD) |
 | `CLM_PMT_AMT` | Amount Medicare paid on the claim |
 
 ## METHODOLOGY
