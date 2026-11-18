@@ -6,7 +6,7 @@ How much did medical costs grow from 2008 to 2009 for a group of Medicare benefi
 
 This project answers these 2 questions using Structured Query Language (SQL), Microsoft Excel, and Centers for Medicare & Medicaid Services' (CMS) synthetic Medicare claims data (DE-SynPUF).
 
-<mark>NOTE</mark>: _CMS DE-SynPUF data is synthetic. It is designed to look similar to real Medicare claims data without describing real patients, which could affect patient-physician confidentiality. This project is designed purely to demonstrate data analytic methodologies. These results are not findings about real Medicare costs._
+<mark>**NOTE**</mark>: _CMS DE-SynPUF data is synthetic. It is designed to look similar to real Medicare claims data without describing real patients, which could affect patient-physician confidentiality. This project is designed purely to demonstrate data analytic methodologies. These results are not findings about real Medicare costs._
 
 ## Motivation
 
