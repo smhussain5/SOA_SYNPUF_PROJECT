@@ -79,6 +79,8 @@ Source: CMS DE-SynPUF https://www.cms.gov/Research-Statistics-Data-and-Systems/D
 | Outpatient | [ ] | [ ] | [ ] | [ ] |
 | Carrier | [ ] | [ ] | [ ] | [ ] |
 | **Total** | [ ] | [ ] | [ ] | 100% |
+
+![Alt text description](04_FINAL_DATA/inpatient_services_contributed_most_to_pmpm_change.png)
  
 ### Inpatient: utilization vs. unit cost
  
