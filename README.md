@@ -106,6 +106,21 @@ This query creates a view (i.e., a saved query) that later steps can use similar
 This query joins the main table to the inpatient view with a `LEFT JOIN`, matching on member ID and year. A `LEFT JOIN` keeps every member in the main table, including members with no admissions. It also leaves out inpatient claims for anyone the main table excluded. For each year, the query adds up member months, admissions, and inpatient claim payments. It then divides total payments by total admissions to get the cost per admission.
 
 ### (5) Trend Split
+
+Input SQL results into Microsoft Excel for trend analysis. Information included...
+
+- Member months
+- Admissions
+- Claim payments
+- Annual admissions per 1,000 members + Trend from 2008 to 2009
+- Cost per admission + Trend from 2008 to 2009
+- Cost per member per month (PMPM) + Trend from 2008 to 2009
+- Share of trend change due to change in utilization from 2008 to 2009
+- Share of trend change due to change in unit costs from 2008 to 2009
+- Inpatient PMPM in 2008, 2009, change in trend, and the share of total PMPM change
+- Outpatient PMPM in 2008, 2009, and the share of total PMPM change
+- Carrier PMPM in 2008, 2009, and the share of total PMPM change
+
 ### (6) Projection
 
 ## Results
