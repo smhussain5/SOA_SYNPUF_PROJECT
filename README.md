@@ -177,7 +177,13 @@ Selected trend = Z × observed trend + (1 − Z) × benchmark trend
 
 ## Reasoning
 
-TBD
+| Decision | Reasoning |
+| --- | --- |
+| **Exclude HMO member months** | Payment fields cover fee-for-service payments only. As a result, HMO member months were excluded; otherwise, PMPM would be understated |
+| **Match Part A and Part B** | Partly done for convenience; otherwise, there would be 2 columns for member months for Part A and Part B, respectively. Additionally, Medicare Advantage plans require enrollment in both Part A and Part B |
+| **Keep negative payment amounts** | Per DE-SynPUF codebook, negative amounts can exist when the deductible exceeds what Medicare would pay for the claim. The codebook does not mention how those negative amounts would be settled. These amounts are kept to follow ASOP 23 guidelines |
+| **Exclude 2010 claim counts** | CMS notes that there are fewer 2010 claim counts partly due to unquantified disclosure treatment effects, so 2010 may not be comparable to 2008–2009 |
+| **Trend selection** | Used credibility-weighing to blend subject experience with a national benchmark per ASOP 25 guidelines |
 
 ## Limitations
 - This CMS dataset is synthetic, meaning it does not represent actual patients and claims. Any calculations cannot be applied to a real-world Medicare pricing
